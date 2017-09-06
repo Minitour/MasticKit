@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class MasticSegmentControl: UIControl {
+public class MCSegmentControl: UIControl {
     
     @IBInspectable
     open var interfacePresentation: String = "Label 1,Label 2,Label 3"

@@ -1,5 +1,5 @@
 //
-//  MasticNavigationController.swift
+//  MCNavigationController.swift
 //  design
 //
 //  Created by Tomer Goldfeder on 04/09/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MasticNavigationController: UINavigationController {
+public class MCNavigationController: UINavigationController {
     
     
     var scrollView: UIScrollView?
@@ -46,8 +46,8 @@ public class MasticNavigationController: UINavigationController {
 extension UINavigationController {
     
     func hook(scrollView: UIScrollView,inside: UIViewController){
-        if self is MasticNavigationController {
-            (self as! MasticNavigationController).scrollView = scrollView
+        if self is MCNavigationController {
+            (self as! MCNavigationController).scrollView = scrollView
         }
         
         inside.automaticallyAdjustsScrollViewInsets = false

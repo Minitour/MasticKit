@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-HX6" customClass="MasticSegmentControl" customModule="MasticExample" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-HX6" customClass="MCSegmentControl" customModule="MasticExample" customModuleProvider="target">
                                                     <rect key="frame" x="127" y="4" width="240" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,12 +83,12 @@
             </objects>
             <point key="canvasLocation" x="2111.1999999999998" y="137.18140929535232"/>
         </scene>
-        <!--Mastic Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="VGp-Ln-ska">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ah-HE-ITs" customClass="MasticNavigationController" customModule="MasticExample" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ah-HE-ITs" customClass="MCNavigationController" customModule="MasticExample" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xP3-dH-mRc" customClass="MasticNavigationBar" customModule="MasticExample" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xP3-dH-mRc" customClass="MCNavigationBar" customModule="MasticExample" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

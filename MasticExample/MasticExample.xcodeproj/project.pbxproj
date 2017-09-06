@@ -12,9 +12,9 @@
 		9DE0B29B1F60781100AC0C97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0B2991F60781100AC0C97 /* Main.storyboard */; };
 		9DE0B29D1F60781100AC0C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0B29C1F60781100AC0C97 /* Assets.xcassets */; };
 		9DE0B2A01F60781100AC0C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0B29E1F60781100AC0C97 /* LaunchScreen.storyboard */; };
-		9DE0B2B21F60786700AC0C97 /* MasticNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2AF1F60786700AC0C97 /* MasticNavigationBar.swift */; };
-		9DE0B2B31F60786700AC0C97 /* MasticNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2B01F60786700AC0C97 /* MasticNavigationController.swift */; };
-		9DE0B2B41F60786700AC0C97 /* MasticSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2B11F60786700AC0C97 /* MasticSegmentControl.swift */; };
+		9DE0B2B21F60786700AC0C97 /* MCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2AF1F60786700AC0C97 /* MCNavigationBar.swift */; };
+		9DE0B2B31F60786700AC0C97 /* MCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2B01F60786700AC0C97 /* MCNavigationController.swift */; };
+		9DE0B2B41F60786700AC0C97 /* MCSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2B11F60786700AC0C97 /* MCSegmentControl.swift */; };
 		9DE0B2B61F60790900AC0C97 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2B51F60790900AC0C97 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,9 @@
 		9DE0B29C1F60781100AC0C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE0B29F1F60781100AC0C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DE0B2A11F60781100AC0C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DE0B2AF1F60786700AC0C97 /* MasticNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasticNavigationBar.swift; sourceTree = "<group>"; };
-		9DE0B2B01F60786700AC0C97 /* MasticNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasticNavigationController.swift; sourceTree = "<group>"; };
-		9DE0B2B11F60786700AC0C97 /* MasticSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasticSegmentControl.swift; sourceTree = "<group>"; };
+		9DE0B2AF1F60786700AC0C97 /* MCNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNavigationBar.swift; sourceTree = "<group>"; };
+		9DE0B2B01F60786700AC0C97 /* MCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNavigationController.swift; sourceTree = "<group>"; };
+		9DE0B2B11F60786700AC0C97 /* MCSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSegmentControl.swift; sourceTree = "<group>"; };
 		9DE0B2B51F60790900AC0C97 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,9 +77,9 @@
 		9DE0B2AE1F60786700AC0C97 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9DE0B2AF1F60786700AC0C97 /* MasticNavigationBar.swift */,
-				9DE0B2B01F60786700AC0C97 /* MasticNavigationController.swift */,
-				9DE0B2B11F60786700AC0C97 /* MasticSegmentControl.swift */,
+				9DE0B2AF1F60786700AC0C97 /* MCNavigationBar.swift */,
+				9DE0B2B01F60786700AC0C97 /* MCNavigationController.swift */,
+				9DE0B2B11F60786700AC0C97 /* MCSegmentControl.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -158,12 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE0B2B31F60786700AC0C97 /* MasticNavigationController.swift in Sources */,
+				9DE0B2B31F60786700AC0C97 /* MCNavigationController.swift in Sources */,
 				9DE0B2B61F60790900AC0C97 /* TableViewController.swift in Sources */,
-				9DE0B2B21F60786700AC0C97 /* MasticNavigationBar.swift in Sources */,
+				9DE0B2B21F60786700AC0C97 /* MCNavigationBar.swift in Sources */,
 				9DE0B2981F60781100AC0C97 /* ViewController.swift in Sources */,
 				9DE0B2961F60781100AC0C97 /* AppDelegate.swift in Sources */,
-				9DE0B2B41F60786700AC0C97 /* MasticSegmentControl.swift in Sources */,
+				9DE0B2B41F60786700AC0C97 /* MCSegmentControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +329,7 @@
 				9DE0B2A61F60781100AC0C97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  MasticNavigationBar.swift
+//  MCNavigationBar.swift
 //  design
 //
 //  Created by Tomer Goldfeder on 04/09/2017.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class MasticNavigationBar: UINavigationBar {
+public class MCNavigationBar: UINavigationBar {
     
     open class var defaultHeight: CGFloat {
         return 58.0
@@ -48,7 +48,7 @@ public class MasticNavigationBar: UINavigationBar {
         return nil
     }
     
-    open var heightValue: CGFloat  = MasticNavigationBar.defaultHeight {
+    open var heightValue: CGFloat  = MCNavigationBar.defaultHeight {
         didSet {
             frame.size.height = heightValue
             updateScrollInset()
@@ -103,6 +103,7 @@ public class MasticNavigationBar: UINavigationBar {
     }
     
     func setup() {
+        
         tintColor = .white
         barTintColor = #colorLiteral(red: 0.6431372549, green: 0.8039215686, blue: 0.8509803922, alpha: 1)
         barStyle = .black
@@ -221,7 +222,7 @@ public class MasticNavigationBar: UINavigationBar {
     fileprivate func pushedController(){
         centerViews()
         UIView.animate(withDuration: 0.3) {[weak self] in
-            self?.heightValue = MasticNavigationBar.defaultHeight
+            self?.heightValue = MCNavigationBar.defaultHeight
         }
         
         
@@ -237,7 +238,7 @@ public class MasticNavigationBar: UINavigationBar {
             
             if offset < 0 {
                 let precent = offset / scrollView.frame.height
-                let newHeight = MasticNavigationBar.defaultHeight + (-precent) * MasticNavigationBar.defaultRubberSize
+                let newHeight = MCNavigationBar.defaultHeight + (-precent) * MCNavigationBar.defaultRubberSize
                 heightValue = newHeight
             }
         }
@@ -248,20 +249,20 @@ public class MasticNavigationBar: UINavigationBar {
 extension UINavigationBar{
     
     func didPush(){
-        if self is MasticNavigationBar{
-            (self as! MasticNavigationBar).pushedController()
+        if self is MCNavigationBar{
+            (self as! MCNavigationBar).pushedController()
         }
     }
     
     func hook(scrollView: UIScrollView){
-        if self is MasticNavigationBar{
-            (self as! MasticNavigationBar).scrollView = scrollView
+        if self is MCNavigationBar{
+            (self as! MCNavigationBar).scrollView = scrollView
         }
     }
     
     func updateInsets(statusVisable: Bool){
-        if self is MasticNavigationBar,
-            let scrollView = (self as! MasticNavigationBar).scrollView {
+        if self is MCNavigationBar,
+            let scrollView = (self as! MCNavigationBar).scrollView {
             
             let ci = scrollView.contentInset
             let height: CGFloat = frame.height
