@@ -34,13 +34,6 @@ public class MCNavigationController: UINavigationController {
             navigationBar.didPush()
         }
     }
-    
-    public override func popViewController(animated: Bool) -> UIViewController? {
-        defer {
-            navigationBar.didPush()
-        }
-        return super.popViewController(animated: animated)
-    }
 }
 
 extension UINavigationController {

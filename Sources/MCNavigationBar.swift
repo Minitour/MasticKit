@@ -30,6 +30,10 @@ public class MCNavigationBar: UINavigationBar {
             if didMove, oldValue == nil {
                 setupLinker()
             }
+            
+            if scrollView == nil {
+                disableLinker()
+            }
         }
     }
     
@@ -220,6 +224,7 @@ public class MCNavigationBar: UINavigationBar {
     }
     
     fileprivate func pushedController(){
+        scrollView = nil
         centerViews()
         UIView.animate(withDuration: 0.3) {[weak self] in
             self?.heightValue = MCNavigationBar.defaultHeight
