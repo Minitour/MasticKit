@@ -213,12 +213,13 @@ public class MCSegmentControl: UIControl {
         backgroundColor = #colorLiteral(red: 0.8528466821, green: 0.8965204358, blue: 0.9113846421, alpha: 1)
         super.prepareForInterfaceBuilder()
         thumbView.removeFromSuperview()
+        
         let view = UIView()
         var selectedFrame: CGRect = .zero
         let newWidth = frame.width / CGFloat(items.count)
         selectedFrame.size.width = newWidth
         selectedFrame.size.height = frame.height
-        print(frame.height)
+
         selectedFrame.origin.x = 0.0
         selectedFrame.origin.y = 0.0
         view.frame = selectedFrame
