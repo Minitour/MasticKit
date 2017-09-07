@@ -13,4 +13,8 @@ public class TableViewController: UITableViewController{
         super.viewDidLoad()
         navigationController?.hook(scrollView: tableView, inside: self)
     }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
