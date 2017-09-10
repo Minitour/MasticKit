@@ -11,8 +11,6 @@ import UIKit
 @IBDesignable
 public class MCTableView: UITableView {
     
-    
-    
     public override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         setup()
@@ -24,7 +22,7 @@ public class MCTableView: UITableView {
     }
     
     fileprivate func setup(){
-        separatorColor = #colorLiteral(red: 0.7634159923, green: 0.8079883456, blue: 0.812315166, alpha: 1)
+        separatorColor = .clear
         backgroundColor = #colorLiteral(red: 0.5940496325, green: 0.7761380076, blue: 0.8309935927, alpha: 1)
     }
     

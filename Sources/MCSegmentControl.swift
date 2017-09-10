@@ -112,13 +112,13 @@ public class MCSegmentControl: UIControl {
     }
     
     fileprivate func layoutThumbView(){
+        let margin: CGFloat = 1.0
         var selectedFrame: CGRect = .zero
         let newWidth = frame.width / CGFloat(items.count)
         selectedFrame.size.width = newWidth
-        selectedFrame.size.height = frame.height
-        print(frame.height)
+        selectedFrame.size.height = frame.height - margin * 2.0
         selectedFrame.origin.x = CGFloat(selectedItem) * newWidth
-        selectedFrame.origin.y = 0.0
+        selectedFrame.origin.y = margin
         thumbView.frame = selectedFrame
         thumbView.backgroundColor = #colorLiteral(red: 0.9999127984, green: 1, blue: 0.9998814464, alpha: 1)
         thumbView.layer.cornerRadius = thumbView.frame.height/2
@@ -201,7 +201,7 @@ public class MCSegmentControl: UIControl {
         
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5, options: [.curveEaseOut] ,animations: {
             
-                self.thumbView.frame = label.frame
+                self.thumbView.frame.origin.x = self.thumbView.frame.size.width * CGFloat(self.selectedItem)
             
             }, completion: nil)
         

@@ -17,8 +17,10 @@ public class MCNavigationController: UINavigationController {
         coordinator.animate(alongsideTransition: nil) {[weak self] (completion) in
             if let `self` = self,
                 self.automaticallyAdjustsScrollViewInsets {
+                
                 self.navigationBar.updateInsets(statusVisable: self.isStatusBarVisable)
             }
+            self?.navigationBar.didRotate()
         }
         
         super.viewWillTransition(to: size, with: coordinator)

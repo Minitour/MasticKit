@@ -39,7 +39,7 @@
                         <sections>
                             <tableViewSection id="H54-pC-q0u">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="Nej-Yq-EB0" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="Nej-Yq-EB0" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="35" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nej-Yq-EB0" id="Csz-pg-4HA">
@@ -61,11 +61,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="Ceb-i3-98r" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="58" id="Ceb-i3-98r" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="93" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ceb-i3-98r" id="TXa-Zv-cvt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -73,6 +73,132 @@
                                         <rect key="frame" x="0.0" y="151" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dI2-9p-DmL" id="bo9-Fa-QUk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="XEE-Qn-6hH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="6al-HY-jfg" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="245" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6al-HY-jfg" id="qlK-NJ-ur8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9el-uZ-Hlv" customClass="MCSegmentControl" customModule="MasticExample" customModuleProvider="target">
+                                                    <rect key="frame" x="127" y="13.5" width="240" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="GvK-Pk-23V"/>
+                                                        <constraint firstAttribute="width" constant="240" id="SwD-gt-zgk"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9el-uZ-Hlv" firstAttribute="trailing" secondItem="qlK-NJ-ur8" secondAttribute="trailingMargin" id="4L9-nC-sYa"/>
+                                                <constraint firstItem="9el-uZ-Hlv" firstAttribute="centerY" secondItem="qlK-NJ-ur8" secondAttribute="centerY" id="h4H-Vg-Oqf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="58" id="hc2-xc-6Jj" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="303" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hc2-xc-6Jj" id="ikB-nO-Cxf">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="1MC-S1-d2A" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="361" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MC-S1-d2A" id="df7-0W-DMn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="DmV-3c-Zfv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="jYp-H2-2a2" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="455" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jYp-H2-2a2" id="qDg-a0-SQQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMn-si-9J0" customClass="MCSegmentControl" customModule="MasticExample" customModuleProvider="target">
+                                                    <rect key="frame" x="127" y="13.5" width="240" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="V7H-w2-74h"/>
+                                                        <constraint firstAttribute="height" constant="30" id="qsO-2L-D5g"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bMn-si-9J0" firstAttribute="centerY" secondItem="qDg-a0-SQQ" secondAttribute="centerY" id="Qhi-iO-saQ"/>
+                                                <constraint firstItem="bMn-si-9J0" firstAttribute="trailing" secondItem="qDg-a0-SQQ" secondAttribute="trailingMargin" id="ffP-KY-giA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="58" id="mfC-tC-iZR" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="513" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mfC-tC-iZR" id="kf9-qi-Xw8">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="FPE-Eu-Sir" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="571" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FPE-Eu-Sir" id="fDT-kH-0vT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="45o-Al-OyJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="sma-hy-SKW" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="665" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sma-hy-SKW" id="KNC-40-o7Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWP-Aa-H3Z" customClass="MCSegmentControl" customModule="MasticExample" customModuleProvider="target">
+                                                    <rect key="frame" x="127" y="13.5" width="240" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="4gw-dm-Dnp"/>
+                                                        <constraint firstAttribute="height" constant="30" id="4mo-MS-65V"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KWP-Aa-H3Z" firstAttribute="centerY" secondItem="KNC-40-o7Q" secondAttribute="centerY" id="Wc8-c7-EKi"/>
+                                                <constraint firstItem="KWP-Aa-H3Z" firstAttribute="trailing" secondItem="KNC-40-o7Q" secondAttribute="trailingMargin" id="rgK-fB-2C2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="58" id="azJ-fe-f7N" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="723" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="azJ-fe-f7N" id="Nct-jX-TS2">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="vWK-dR-AS4" customClass="MCTableViewCell" customModule="MasticExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="781" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vWK-dR-AS4" id="VzE-ql-VOI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>

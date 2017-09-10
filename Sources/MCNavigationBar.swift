@@ -16,7 +16,7 @@ public class MCNavigationBar: UINavigationBar {
     }
     
     open class var defaultRubberSize: CGFloat{
-        return 200.0
+        return 350.0
     }
     
     fileprivate var statusBarView: UIView?
@@ -107,15 +107,15 @@ public class MCNavigationBar: UINavigationBar {
     }
     
     func setup() {
-        
+        let color = #colorLiteral(red: 0.5882352941, green: 0.7764705882, blue: 0.831372549, alpha: 1)
         tintColor = .white
-        barTintColor = #colorLiteral(red: 0.6431372549, green: 0.8039215686, blue: 0.8509803922, alpha: 1)
+        barTintColor = color
         barStyle = .black
         layer.shadowOpacity = 0.75
         layer.shadowRadius = 10.0
         layer.shadowColor = #colorLiteral(red: 0.1501606703, green: 0.3778939247, blue: 0.4593330026, alpha: 1).cgColor
-        shadowImage = #colorLiteral(red: 0.7141833901, green: 0.842882514, blue: 0.8841859698, alpha: 1).as1ptImage()
-        setBackgroundImage(#colorLiteral(red: 0.6431372549, green: 0.8039215686, blue: 0.8509803922, alpha: 1).as1ptImage(), for: .default)
+        shadowImage = color.as1ptImage()
+        setBackgroundImage(color.as1ptImage(), for: .default)
         statusBarColor = #colorLiteral(red: 0.1501606703, green: 0.3778939247, blue: 0.4593330026, alpha: 1)
         
         let attributes = [NSFontAttributeName : UIFont(name: "Verdana-Bold", size: 18)!, NSForegroundColorAttributeName : #colorLiteral(red: 0.1162508164, green: 0.2967372687, blue: 0.3616767526, alpha: 1)] as [String : Any]
@@ -229,8 +229,14 @@ public class MCNavigationBar: UINavigationBar {
         UIView.animate(withDuration: 0.3) {[weak self] in
             self?.heightValue = MCNavigationBar.defaultHeight
         }
-        
-        
+    }
+    
+    fileprivate func orientationChanged(){
+        updateScrollInset()
+        UIView.animate(withDuration: 0.1) {[weak self] in
+            self?.heightValue = MCNavigationBar.defaultHeight
+        }
+        setNeedsLayout()
     }
     
     func animationTime(linker: CADisplayLink){
@@ -252,6 +258,12 @@ public class MCNavigationBar: UINavigationBar {
 }
 
 extension UINavigationBar{
+    
+    func didRotate(){
+        if self is MCNavigationBar{
+            (self as! MCNavigationBar).orientationChanged()
+        }
+    }
     
     func didPush(){
         if self is MCNavigationBar{

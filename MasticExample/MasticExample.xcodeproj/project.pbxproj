@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9DD3E7F71F610F1100F1A743 /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */; };
 		9DD3E7F91F61117700F1A743 /* MCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3E7F81F61117700F1A743 /* MCTableView.swift */; };
+		9DD3E7FB1F61479800F1A743 /* media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD3E7FA1F61479800F1A743 /* media.xcassets */; };
 		9DE0B2961F60781100AC0C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2951F60781100AC0C97 /* AppDelegate.swift */; };
 		9DE0B2981F60781100AC0C97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0B2971F60781100AC0C97 /* ViewController.swift */; };
 		9DE0B29B1F60781100AC0C97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0B2991F60781100AC0C97 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
 		9DD3E7F81F61117700F1A743 /* MCTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableView.swift; sourceTree = "<group>"; };
+		9DD3E7FA1F61479800F1A743 /* media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = media.xcassets; sourceTree = "<group>"; };
 		9DE0B2921F60781100AC0C97 /* MasticExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasticExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE0B2951F60781100AC0C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DE0B2971F60781100AC0C97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DD3E7FC1F614AA700F1A743 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				9DE0B2AF1F60786700AC0C97 /* MCNavigationBar.swift */,
+				9DE0B2B01F60786700AC0C97 /* MCNavigationController.swift */,
+			);
+			name = NavigationBar;
+			sourceTree = "<group>";
+		};
+		9DD3E7FD1F614ABA00F1A743 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */,
+				9DD3E7F81F61117700F1A743 /* MCTableView.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		9DD3E7FE1F614ACA00F1A743 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				9DE0B2B11F60786700AC0C97 /* MCSegmentControl.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		9DE0B2891F60781100AC0C97 = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +109,10 @@
 		9DE0B2AE1F60786700AC0C97 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9DE0B2AF1F60786700AC0C97 /* MCNavigationBar.swift */,
-				9DE0B2B01F60786700AC0C97 /* MCNavigationController.swift */,
-				9DE0B2B11F60786700AC0C97 /* MCSegmentControl.swift */,
-				9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */,
-				9DD3E7F81F61117700F1A743 /* MCTableView.swift */,
+				9DD3E7FE1F614ACA00F1A743 /* Controls */,
+				9DD3E7FD1F614ABA00F1A743 /* TableView */,
+				9DD3E7FC1F614AA700F1A743 /* NavigationBar */,
+				9DD3E7FA1F61479800F1A743 /* media.xcassets */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -153,6 +180,7 @@
 			files = (
 				9DE0B2A01F60781100AC0C97 /* LaunchScreen.storyboard in Resources */,
 				9DE0B29D1F60781100AC0C97 /* Assets.xcassets in Resources */,
+				9DD3E7FB1F61479800F1A743 /* media.xcassets in Resources */,
 				9DE0B29B1F60781100AC0C97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
