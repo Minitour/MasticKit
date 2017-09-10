@@ -13,22 +13,6 @@ public class MCTableViewCell: UITableViewCell{
 
     fileprivate var borderView: UIView?
    
-    override public func draw(_ rect: CGRect) {
-        super.draw(rect)
-        
-        if isSelected || isHighlighted {
-            let object1 = UIBezierPath()
-            object1.move(to: CGPoint(x: 0.0, y: 0.0))
-            object1.addLine(to: CGPoint(x: rect.width, y: 0.0))
-            object1.move(to: CGPoint(x: 0.0, y: rect.height))
-            object1.addLine(to: CGPoint(x: rect.width, y: rect.height))
-            object1.close()
-            #colorLiteral(red: 0.8654696345, green: 0.9059456587, blue: 0.9143808484, alpha: 1).set()
-            object1.lineWidth = 4.0
-            object1.stroke()
-        }
-        
-    }
     
     @IBInspectable
     var selectedColor: UIColor = UIColor.lightGray {
@@ -52,10 +36,16 @@ public class MCTableViewCell: UITableViewCell{
         borderView = UIView()
         insertSubview(borderView!, at: 0)
         borderView?.translatesAutoresizingMaskIntoConstraints = false
-        borderView?.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        borderView?.topAnchor.constraint(equalTo: topAnchor, constant: -2.0).isActive = true
         borderView?.leftAnchor.constraint(equalTo: leftAnchor, constant: -4.0).isActive = true
         borderView?.rightAnchor.constraint(equalTo: rightAnchor, constant: 4.0).isActive = true
         borderView?.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        borderView?.layer.borderColor = #colorLiteral(red: 0.8654696345, green: 0.9059456587, blue: 0.9143808484, alpha: 1).cgColor
+        borderView?.backgroundColor = selectedColor
+        borderView?.layer.borderWidth = 2.0
+        borderView?.alpha = 0.0
+        clipsToBounds = false
+        backgroundColor = .white
     }
     
     
@@ -70,25 +60,29 @@ public class MCTableViewCell: UITableViewCell{
     
     fileprivate func modify(enabled: Bool, animated: Bool){
         if(enabled) {
-            updateUI(color: selectedColor, animated: animated)
-            borderView?.layer.borderColor = #colorLiteral(red: 0.8654696345, green: 0.9059456587, blue: 0.9143808484, alpha: 1).cgColor
-            borderView?.layer.borderWidth = 2.0
+            if animated {
+                UIView.animate(withDuration: 0.3) {
+                    self.borderView?.alpha = 1.0
+                }
+            }else{
+                borderView?.alpha = 1.0
+            }
+            
         } else {
-            updateUI(color: .white, animated: animated)
-            borderView?.layer.borderColor = #colorLiteral(red: 0.8654696345, green: 0.9059456587, blue: 0.9143808484, alpha: 1).cgColor
-            borderView?.layer.borderWidth = 0.0
+            if animated {
+                UIView.animate(withDuration: 0.3) {
+                    self.borderView?.alpha = 0.0
+                }
+            }else{
+                borderView?.alpha = 0.0
+            }
         }
     }
     
-    fileprivate func updateUI(color: UIColor, animated: Bool){
-        if animated {
-            UIView.animate(withDuration: 0.3) {
-                self.backgroundColor = color
-            }
-        }else{
-            backgroundColor = color
-            self.backgroundColor = color
-        }
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        textLabel?.backgroundColor = .clear
     }
     
 }

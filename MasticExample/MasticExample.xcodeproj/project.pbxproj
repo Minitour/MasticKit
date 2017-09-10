@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D9DC9BC1F65455300FF50A1 /* MCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DC9BB1F65455300FF50A1 /* MCTableViewController.swift */; };
 		9DD3E7F71F610F1100F1A743 /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */; };
 		9DD3E7F91F61117700F1A743 /* MCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3E7F81F61117700F1A743 /* MCTableView.swift */; };
 		9DD3E7FB1F61479800F1A743 /* media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD3E7FA1F61479800F1A743 /* media.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D9DC9BB1F65455300FF50A1 /* MCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewController.swift; sourceTree = "<group>"; };
 		9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
 		9DD3E7F81F61117700F1A743 /* MCTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableView.swift; sourceTree = "<group>"; };
 		9DD3E7FA1F61479800F1A743 /* media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = media.xcassets; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				9DD3E7F61F610F1100F1A743 /* MCTableViewCell.swift */,
 				9DD3E7F81F61117700F1A743 /* MCTableView.swift */,
+				9D9DC9BB1F65455300FF50A1 /* MCTableViewController.swift */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				9DD3E7F71F610F1100F1A743 /* MCTableViewCell.swift in Sources */,
 				9DE0B2961F60781100AC0C97 /* AppDelegate.swift in Sources */,
 				9DE0B2B41F60786700AC0C97 /* MCSegmentControl.swift in Sources */,
+				9D9DC9BC1F65455300FF50A1 /* MCTableViewController.swift in Sources */,
 				9DD3E7F91F61117700F1A743 /* MCTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

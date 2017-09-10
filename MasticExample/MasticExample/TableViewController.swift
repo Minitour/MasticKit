@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TableViewController: UITableViewController{
+public class TableViewController: MCTableViewController{
     public override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.hook(scrollView: tableView, inside: self)

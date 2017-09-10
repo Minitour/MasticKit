@@ -22,9 +22,19 @@ public class MCTableView: UITableView {
     }
     
     fileprivate func setup(){
-        separatorColor = .clear
+        //separatorColor = .clear
         backgroundColor = #colorLiteral(red: 0.5940496325, green: 0.7761380076, blue: 0.8309935927, alpha: 1)
     }
     
-    
+}
+
+extension UITableView {
+    var wrapper: UIView? {
+        for view in subviews {
+            if "\(type(of: view))" == "UITableViewWrapperView"{
+                return view
+            }
+        }
+        return nil
+    }
 }
